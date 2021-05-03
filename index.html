@@ -5,19 +5,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <style>
-    	.responsive h1{
-          font-size: 50px;
-        }
     
-    	.responsive img{
-          width: 100%;
-          height: 100%;
+    	.responsive {
+        	background-color: green;
         }
         
-        @media screen and (max-width: 600px) {          
-          .responsive h1{
-          font-size: 20px;
+    	.responsive h1{
+        	font-size: 50px;
         }
+    
+    	.responsive img {
+          	width: 100%;
+          	height: 100%;
+        }
+        
+        .responsive video {
+          	width: 100%;
+          	height: 100%;
+        }
+        
+        @media screen and (max-width: 600px) {
+        	.responsive {
+            	background-color: red;
+            }
+            
+            .responsive h1{
+            	font-size: 20px;
+            }
         }
     </style>
   </head>
@@ -25,6 +39,12 @@
     <div class="responsive">
     	<h1>Photo</h1>
       <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"/>
+      
+      <h1>Video</h1>
+      <video controls>
+      	<source src="https://static.videezy.com/system/resources/previews/000/051/314/original/Test_Speed_Internet_Animated_Infographic_Concept.mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </body>
 </html>
